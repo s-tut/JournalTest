@@ -39,6 +39,10 @@ struct ContentView: View {
             }
             .padding()
             .background(Color(red:154/255, green: 197/255, blue: 244/255))
+            
+            Button("Done") {
+                
+            }
         }
     }
 }

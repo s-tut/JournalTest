@@ -30,22 +30,28 @@ struct Notes: View {
             }
             VStack
             {
-                TextField("Date..", text: $date)
+                
+                TextField("Date...", text: $date)
                     .multilineTextAlignment(.center)
                     .font(.title)
+                    .frame(height: 50.0)
                     .border(Color.gray, width: 1)
+                    .background(Color(red:255/255, green: 255/255, blue: 255/255))
                 
+                .padding(.top, 25)
                 .padding(.bottom, 50)
                 
                 Text("What did you dream of last night?")
                     .font(.title3)
                     .fontWeight(.bold)
                 
-                TextField("Enter Text..", text: $entry)
+                TextField("", text: $entry, axis:.vertical)
                     .multilineTextAlignment(.center)
                     .font(.title)
                     .frame(height: 200.0)
                     .border(Color.gray, width: 1)
+                    .background(Color(red:255/255, green: 255/255, blue: 255/255))
+                    .padding(.bottom, 25)
             }
             
             
