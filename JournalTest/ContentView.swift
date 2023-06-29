@@ -9,13 +9,37 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        
+        NavigationStack
+        {
+            VStack (spacing:40)
+            {
+                HStack
+                {
+                    Text("Journal")
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
+                        .frame(maxWidth: .infinity, alignment: .center)
+                        .foregroundColor(Color(red:255/255, green: 238/255, blue: 187/255))
+                        .padding()
+                }
+                Spacer()
+                
+                NavigationLink(destination: Notes())
+                {
+                    Text("6/25")
+                        .font(.title)
+                        .bold()
+                        .frame(width: 280, height: 70)
+                        .foregroundColor(.black)
+                        .background(Color(red:255/255, green: 238/255, blue: 187/255))
+                        .cornerRadius(15)
+                }
+                
+            }
+            .padding()
+            .background(Color(red:154/255, green: 197/255, blue: 244/255))
         }
-        .padding()
     }
 }
 
