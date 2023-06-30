@@ -24,11 +24,61 @@ struct ContentView: View {
                         .foregroundColor(Color(red:255/255, green: 238/255, blue: 187/255))
                         .padding()
                 }
-                Spacer()
+                //Spacer()
                 
                 NavigationLink(destination: Notes())
                 {
-                    Text("6/25")
+                    Text("6/1")
+                        .font(.title)
+                        .bold()
+                        .frame(width: 280, height: 70)
+                        .foregroundColor(.black)
+                        .background(Color(red:255/255, green: 238/255, blue: 187/255))
+                        .cornerRadius(15)
+                }
+                NavigationLink(destination: Notes())
+                {
+                    Text("6/2")
+                        .font(.title)
+                        .bold()
+                        .frame(width: 280, height: 70)
+                        .foregroundColor(.black)
+                        .background(Color(red:255/255, green: 238/255, blue: 187/255))
+                        .cornerRadius(15)
+                }
+                NavigationLink(destination: Notes())
+                {
+                    Text("6/3")
+                        .font(.title)
+                        .bold()
+                        .frame(width: 280, height: 70)
+                        .foregroundColor(.black)
+                        .background(Color(red:255/255, green: 238/255, blue: 187/255))
+                        .cornerRadius(15)
+                }
+                NavigationLink(destination: Notes())
+                {
+                    Text("6/4")
+                        .font(.title)
+                        .bold()
+                        .frame(width: 280, height: 70)
+                        .foregroundColor(.black)
+                        .background(Color(red:255/255, green: 238/255, blue: 187/255))
+                        .cornerRadius(15)
+                }
+                NavigationLink(destination: Notes())
+                {
+                    Text("6/5")
+                        .font(.title)
+                        .bold()
+                        .frame(width: 280, height: 70)
+                        .foregroundColor(.black)
+                        .background(Color(red:255/255, green: 238/255, blue: 187/255))
+                        .cornerRadius(15)
+                }
+                NavigationLink(destination: Notes())
+                {
+                    Text("6/6")
                         .font(.title)
                         .bold()
                         .frame(width: 280, height: 70)
@@ -41,6 +91,9 @@ struct ContentView: View {
             .padding()
             .background(Color(red:154/255, green: 197/255, blue: 244/255))
             
+            .navigationTitle("All Entries")
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarHidden(true)
         }
     }
 }

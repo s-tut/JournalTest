@@ -78,35 +78,6 @@ struct Notes: View {
     }
 }
 
-class AppData: ObservableObject
-{
-    @Published var entry = JournalEntry()
-}
-
-class JournalEntry
-{
-    var data = ""
-    var date = ""
-    
-    func getData() -> String
-    {
-        return self.data
-    }
-    func getDate() -> String
-    {
-        return self.date
-    }
-    func setData(newData : String)
-    {
-        self.data = newData
-    }
-    func setDate(newDate : String)
-    {
-        self.date = newDate
-    }
-}
-
-
 
 struct Notes_Previews: PreviewProvider {
     static var previews: some View {
