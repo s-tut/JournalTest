@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD0382852A4F451B00C0640C /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0382842A4F451B00C0640C /* AppData.swift */; };
+		BD0382872A4F45F100C0640C /* JournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0382862A4F45F100C0640C /* JournalEntry.swift */; };
 		BD1609D12A4E01C80043F2BF /* JournalTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1609D02A4E01C80043F2BF /* JournalTestApp.swift */; };
 		BD1609D32A4E01C80043F2BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1609D22A4E01C80043F2BF /* ContentView.swift */; };
 		BD1609D52A4E01C80043F2BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD1609D42A4E01C80043F2BF /* Assets.xcassets */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD0382842A4F451B00C0640C /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		BD0382862A4F45F100C0640C /* JournalEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntry.swift; sourceTree = "<group>"; };
 		BD1609CD2A4E01C80043F2BF /* JournalTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JournalTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD1609D02A4E01C80043F2BF /* JournalTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalTestApp.swift; sourceTree = "<group>"; };
 		BD1609D22A4E01C80043F2BF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +60,8 @@
 				BD1609D02A4E01C80043F2BF /* JournalTestApp.swift */,
 				BD1609D22A4E01C80043F2BF /* ContentView.swift */,
 				BD1609DE2A4E05E70043F2BF /* Notes.swift */,
+				BD0382842A4F451B00C0640C /* AppData.swift */,
+				BD0382862A4F45F100C0640C /* JournalEntry.swift */,
 				BD1609D42A4E01C80043F2BF /* Assets.xcassets */,
 				BD1609D62A4E01C80043F2BF /* Preview Content */,
 			);
@@ -142,7 +148,9 @@
 			files = (
 				BD1609D32A4E01C80043F2BF /* ContentView.swift in Sources */,
 				BD1609D12A4E01C80043F2BF /* JournalTestApp.swift in Sources */,
+				BD0382872A4F45F100C0640C /* JournalEntry.swift in Sources */,
 				BD1609DF2A4E05E70043F2BF /* Notes.swift in Sources */,
+				BD0382852A4F451B00C0640C /* AppData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

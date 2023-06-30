@@ -6,12 +6,20 @@
 
 // Problems: date, saved text, adding new entries
 
+//ObservableObject
+//@EnvironmentObject
+
 import SwiftUI
+import Foundation
 
 struct Notes: View {
     
-    @State private var date = ""
-    @State private var entry = ""
+    @EnvironmentObject var appData : AppData
+    @State var date = ""
+    @State var entry = ""
+    
+    @State var date2 = ""
+    @State var entry2 = ""
     
     var body: some View {
         
@@ -33,21 +41,21 @@ struct Notes: View {
                 VStack
                 {
                     
-                    TextField("Date...", text: $date)
+                    TextField("Date...", text: $date2)
                         .multilineTextAlignment(.center)
                         .font(.title)
                         .frame(height: 50.0)
                         .border(Color.gray, width: 1)
                         .background(Color(red:255/255, green: 255/255, blue: 255/255))
-                    
                         .padding(.top, 25)
                         .padding(.bottom, 50)
+                    
                     
                     Text("What did you dream of last night?")
                         .font(.title3)
                         .fontWeight(.bold)
                     
-                    TextField("", text: $entry, axis:.vertical)
+                    TextField("", text: $entry2, axis:.vertical)
                         .multilineTextAlignment(.center)
                         .font(.title)
                         .frame(height: 200.0)
@@ -55,10 +63,7 @@ struct Notes: View {
                         .background(Color(red:255/255, green: 255/255, blue: 255/255))
                         //.padding(.bottom, 25)
                     
-                    NavigationLink(destination: ContentView())
-                    {
-                        Text("Done")
-                    }
+                    
                     .padding(30)
                 }
                 .padding()
@@ -73,9 +78,40 @@ struct Notes: View {
     }
 }
 
+class AppData: ObservableObject
+{
+    @Published var entry = JournalEntry()
+}
+
+class JournalEntry
+{
+    var data = ""
+    var date = ""
+    
+    func getData() -> String
+    {
+        return self.data
+    }
+    func getDate() -> String
+    {
+        return self.date
+    }
+    func setData(newData : String)
+    {
+        self.data = newData
+    }
+    func setDate(newDate : String)
+    {
+        self.date = newDate
+    }
+}
+
+
 
 struct Notes_Previews: PreviewProvider {
     static var previews: some View {
         Notes()
     }
 }
+
+//date2 : .constant(""), entry2 : .constant("")
